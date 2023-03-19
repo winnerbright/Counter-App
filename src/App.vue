@@ -1,64 +1,37 @@
 <template>
   <div id="app">
     <nav>
-      <div class="header">Counter App</div>
-      <div class="routes">
-        <router-link to="/">Home</router-link>
-        <router-link to="/counter">Counter</router-link>
-      </div>
+      <div class="header">My Counter App</div>
     </nav>
     <router-view />
   </div>
 </template>
-
 <script>
 export default {
   name: 'App',
 };
 </script>
-
 <style>
 #app {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
   text-align: center;
 }
 nav {
   display: flex;
-  z-index: 5;
   justify-content: space-around;
   align-items: center;
-  background-color: inherit;
-  color: inherit;
+  background-color: #111;
+  color: purple;
   width: 100%;
-  padding: 14px;
-  margin: 0 auto;
-  box-shadow: 1px 1px 3px #555;
+  padding: 20px;
+  border-bottom: 1px solid purple;
 }
 
 .header {
   font-size: 2.4rem;
-  color: rgb(23, 23, 177);
-  font-family: header;
+  color: purple;
+  font-family: cursive;
   font-weight: light;
-  letter-spacing: 2px;
-  margin-left: 15px;
+  letter-spacing: 4px;
 }
-
-.routes {
-  display: flex;
-  gap: 10px;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 15px;
-}
-
-.routes a {
-  color: inherit;
-  text-decoration: none;
-  margin-right: 1rem;
-  font-weight: bolder;
-  font-size: 1.6rem;
-  color: rgb(23, 23, 177);
-}
-
 </style>
